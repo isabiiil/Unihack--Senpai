@@ -12,9 +12,21 @@ header={
 
 @app.route("/", methods=["GET"])
 def index():
+
 	return render_template("index.html")
 
 
+@app.route("/astratest", methods=["GET"])
+def mood():
+	'''
+	curl --request POST \
+    --url https://${ASTRA_CLUSTER_ID}-${ASTRA_CLUSTER_REGION}.apps.astra.datastax.com/api/rest/v1/keyspaces/${ASTRA_DB_KEYSPACE}/tables \
+    --header 'content-type: application/json' \
+    --header "x-cassandra-token: ${ASTRA_AUTHORIZATION_TOKEN}" \
+    --data '{"name":"mood"}'
+	'''
+
+	return header
 
 
 if __name__ == "__main_":
