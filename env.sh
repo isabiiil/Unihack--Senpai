@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 export ASTRA_CLUSTER_ID=aca4e01c-1465-4012-8e84-f282757e54f9
 export ASTRA_CLUSTER_REGION=us-east1
 export ASTRA_DB_USERNAME=moody
