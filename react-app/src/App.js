@@ -10,10 +10,11 @@ import {
 // import { fas } from '@fortawesome/free-brands-svg-icons'
 // import { faUserCircle, faEnvelope, faUnlockAlt } from '@fortawesome/free-solid-svg-icons'
 
-import Register from "./pages/Register"
-import Login from "./pages/Login"
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Navbar from "./components/Navbar";
+import Profile from "./pages/Profile"
 import './App.css';
-import Navbar from "./components/Navbar"
 
 // library.add(fas, faUserCircle, faEnvelope, faUnlockAlt);
 
@@ -34,7 +35,7 @@ export default function App() {
                 <Link to="/nav">Nav</Link>
               </li>
               <li>
-                <p>My Token = {window.token}</p>
+                <Link to="/profile">Profile</Link>
               </li>
             </ul>
           </nav>
@@ -47,6 +48,9 @@ export default function App() {
             </Route>
             <Route path="/nav">
               <Navbar />
+            </Route>
+            <Route path="/profile">
+              <Profile />
             </Route>
             <Route path="/">
               <Register />

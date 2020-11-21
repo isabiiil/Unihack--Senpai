@@ -6,7 +6,7 @@ app.secret_key = "debug"
 
 @app.route("/")
 def my_index():
-    return render_template("index.html", json_data=json.dumps({"mood":"doof"}))
+    return render_template("index.html", json_data=json.dumps({"mood":"doof"}, sort_keys=True, indent=4, separators=(',', ':')))
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -27,6 +27,10 @@ def register():
 def auth():
 
 	return request.json
+
+@app.errorhandler(404)
+def error(e):
+	return redirect(url_for("my_index"))
 
 @app.route("/mood", methods=["GET"])
 def mood():

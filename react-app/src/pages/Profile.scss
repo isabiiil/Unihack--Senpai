@@ -1,0 +1,19 @@
+@import "../main.scss";
+
+.profile {
+  background-color: $turquoise;
+  border-radius: 38px;
+  width: 61.198vw;
+  height: auto;
+  margin: 0 auto;
+
+  .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    .header, .bio, .col-container {
+      background-color: $sea-green;
+    }
+  }
+}
