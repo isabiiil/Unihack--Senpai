@@ -1,11 +1,12 @@
 from flask import *
+import json
 
 app = Flask(__name__)
 app.secret_key = "debug"
 
 @app.route("/")
 def my_index():
-    return render_template("index.html", flask_token="Hello   world")
+    return render_template("index.html", json_data=json.dumps({"mood":"doof"}))
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -33,4 +34,4 @@ def mood():
 
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=True, port=5001)
