@@ -137,3 +137,7 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 node_modules
+
+./env.sh
+settings.json
+react-app/package-lock.json
