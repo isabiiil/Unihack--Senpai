@@ -3,9 +3,9 @@ from flask import *
 app = Flask(__name__)
 app.secret_key = "debug"
 
-@app.route("/", methods=["GET"])
-def index():
-	return render_template("home.html")
+@app.route("/")
+def my_index():
+    return render_template("index.html", flask_token="Hello   world")
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -27,5 +27,10 @@ def auth():
 
 	return request.json
 
+@app.route("/mood", methods=["GET"])
+def mood():
+    return "hello"
+
+
 if __name__ == "__main__":
-	app.run()
+	app.run(debug=True)
