@@ -1,0 +1,55 @@
+@import "../main.scss";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $turquoise;
+  border-radius: 38px;
+  width: 61.198vw;
+  height: auto;
+  margin: 0 auto;
+  padding: 3.143vh 5.556vw;
+
+  .avatar {
+    width: 11.806vw;
+    border: solid black 0px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $text-green;
+
+    .avatars {
+      display: flex;
+      flex-direction: row;
+    }
+
+    input {
+      background-color: $sea-green;
+      border-radius: 50px;
+      border: solid black 0px;
+      margin: 1.714vh auto;
+      padding: 2.857vh 2vw;
+      min-width: 50.174vw;
+    }
+
+    input[type="radio"]:checked{
+      opacity: 100;
+    }
+
+    input[type="radio"] {
+      opacity: 0;
+    }
+
+    input[type="submit"] {
+      padding: 1vh 2.257vw;
+      min-width: 0;
+      background-color: $yellow;
+    }
+  }
+}
