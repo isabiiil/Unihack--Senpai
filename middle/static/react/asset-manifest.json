@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.003dbe76.chunk.css",
+    "main.js": "/static/react/js/main.24d3eb9d.chunk.js",
+    "main.js.map": "/static/react/js/main.24d3eb9d.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.e02229df.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.e02229df.js.map",
+    "js/2.05c36eac.chunk.js": "/static/react/js/2.05c36eac.chunk.js",
+    "js/2.05c36eac.chunk.js.map": "/static/react/js/2.05c36eac.chunk.js.map",
+    "js/3.4e0b908b.chunk.js": "/static/react/js/3.4e0b908b.chunk.js",
+    "js/3.4e0b908b.chunk.js.map": "/static/react/js/3.4e0b908b.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/main.003dbe76.chunk.css.map": "/static/react/css/main.003dbe76.chunk.css.map",
+    "js/2.05c36eac.chunk.js.LICENSE.txt": "/static/react/js/2.05c36eac.chunk.js.LICENSE.txt",
+    "media/avatar2.1cd33727.png": "/static/react/media/avatar2.1cd33727.png",
+    "media/Login.scss": "/static/react/media/blobs.e7cddbb4.png"
+  },
+  "entrypoints": [
+    "js/runtime-main.e02229df.js",
+    "js/2.05c36eac.chunk.js",
+    "css/main.003dbe76.chunk.css",
+    "js/main.24d3eb9d.chunk.js"
+  ]
+}

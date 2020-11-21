@@ -33,6 +33,9 @@ export default function App() {
               <li>
                 <Link to="/nav">Nav</Link>
               </li>
+              <li>
+                <p>My Token = {window.token}</p>
+              </li>
             </ul>
           </nav>
 
