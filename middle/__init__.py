@@ -70,6 +70,19 @@ def registeruser(username, pw, imgurl):
 def index():
 	return render_template("home.html")
 
+@app.route("/loginapidebug", methods=["POST"])
+def loginapidebug():
+	data = request.get_json()
+	uname = data["username"]
+	outcome = data["outcome"]
+	password = data["password"]
+
+	if outcome == "fail":
+		return {"status":"failed", "user":uname}
+	session["user"] = uname
+	return {"status":"logged in", "user":uname}	
+	pass
+
 @app.route("/loginapi", methods=["POST"])
 def loginapi():
 	data = request.get_json()
