@@ -5,6 +5,7 @@
     margin: 4.286vh 4.948vw;
     border: solid black 0px;
     border-radius: 38px;
+    padding-bottom: 10px;
   
     .search-bar {
         background-color: $sea-green;
@@ -37,6 +38,7 @@
 
         p {
             margin: 20px;
+            font-size: medium;
         }
 
     }

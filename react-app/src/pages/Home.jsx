@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="home">
       <Navbar />
-      <img src={Avatar} />
+      <img className="main-img"src={Avatar} />
       <div className="featured-title">
         <p>Kimi ni Na wa.</p>
       </div>

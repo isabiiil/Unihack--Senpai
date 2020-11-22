@@ -1,2 +1,19 @@
 @import './../main.scss';
 
+.wiki {
+    background-color: $turquoise;
+    margin: 4.286vh 4.948vw;
+    border: solid black 0px;
+    border-radius: 38px;
+    padding-bottom: 10px;
+
+    .banner {
+        position: relative;
+
+        img {
+            position: relative;
+            width: 90vw;
+            height: 30vh;
+        }
+    }
+}
