@@ -70,6 +70,17 @@ def registeruser(username, pw, imgurl):
 def index():
 	return render_template("home.html")
 
+@app.route("/loginapi", methods=["POST"])
+def loginapi():
+	data = request.get_json()
+	uname = data["username"]
+	password = data["password"]
+	# TODO: check to see if user exists or not
+
+	session["user"] = uname
+	return {"status":"logged in", "user":uname}	
+	pass
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
 	if request.method == "POST":
