@@ -1,7 +1,32 @@
 from flask import *
+import requests
 
 app = Flask(__name__)
 app.secret_key = "debug"
+
+
+def gimmetoken():
+    url = "https://aca4e01c-1465-4012-8e84-f282757e54f9-us-east1.apps.astra.datastax.com/api/rest/v1/auth"
+
+    payload = "{\"username\":\"moody\",\"password\":\"Moody921\"}"
+    headers = {
+        'Content-Type': "application/json",
+        'cache-control': "no-cache",
+        'Postman-Token': "fd91ccce-5703-4cde-ab48-9bee17b2daba"
+        }
+
+    response = requests.request("POST", url, data=payload, headers=headers)
+
+    # print(response.text)
+
+    rj = json.loads(response.text)
+
+    # print (rj['authToken'])
+
+    return rj['authToken']
+
+
+
 
 @app.route("/", methods=["GET"])
 def index():
