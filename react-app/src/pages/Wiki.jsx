@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Wiki.scss';
 
 import Navbar from './../components/Navbar';
@@ -55,8 +56,34 @@ export default function Wiki() {
           </div>
         </div>
         <div className="row3">
-          
+          <h3>Characters & Voice Actors</h3>
+          <Voice charName="char1" voiceName="name" />
+          <Voice charName="char2" voiceName="name" />
         </div>
+        <div className="row4">
+          <div className="past-review">
+            <img src={Avatar} />
+            <p>"Did I reach you? I hope I did."
+
+            There were many points in the story where I bawled my eyes out. However, this story is not about tragedy. It is about following your passion, valuing your friends and family, and helping people along the way. We all must strive to live our life to the fullest!
+            </p>
+            <p>episodes seen</p>
+            <p>overall rating</p>
+            <p>thumb</p>
+          </div>
+          <div className="new-review">
+            <h3>Write a review</h3>
+            <textarea rows="8" cols="80"></textarea>
+            <select>
+              <option>Overall rating</option>
+            </select>
+            <select>
+              <option>Episodes Watched</option>
+            </select>
+            <button>submit</button>
+          </div>
+        </div>
+      <p><Link to="/wiki">Back to top</Link></p>
       </div>
     </div>
   );

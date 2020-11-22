@@ -16,6 +16,8 @@ import Navbar from "./components/Navbar";
 import Profile from "./pages/Profile";
 import Search from "./pages/Search";
 import Swipe from "./pages/Swipe";
+import Home from "./pages/Home";
+import Wiki from "./pages/Wiki"
 import './App.css';
 
 // library.add(fas, faUserCircle, faEnvelope, faUnlockAlt);
@@ -45,6 +47,12 @@ export default function App() {
               <li>
                 <Link to="/swipe">Swipe</Link>
               </li>
+              <li>
+                <Link to="/home">Home</Link>
+              </li>
+              <li>
+                <Link to="/wiki">Wiki</Link>
+              </li>
             </ul>
           </nav>
 
@@ -65,6 +73,12 @@ export default function App() {
             </Route>
             <Route path="/swipe">
               <Swipe />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/wiki">
+              <Wiki />
             </Route>
             <Route path="/">
               <Register />
