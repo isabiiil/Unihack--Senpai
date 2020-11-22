@@ -10,13 +10,18 @@
   height: auto;
   margin: 0 auto;
   padding: 3.143vh 5.556vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  .avatar {
-    width: 11.806vw;
-    border: solid black 0px;
-    border-radius: 50%;
-    margin: 0 auto;
-  }
+.icon {
+  font-size: 48px;
+}
+  // .avatar {
+  //   width: 11px;
+  //   height: 11px;
+  //   border: solid black 0px;
+  //   border-radius: 50%;
+  //   margin: 0 auto;
+  // }
 
   form {
     display: flex;
@@ -24,10 +29,10 @@
     justify-content: center;
     color: $text-green;
 
-    .avatars {
-      display: flex;
-      flex-direction: row;
-    }
+    // .avatars {
+    //   display: flex;
+    //   flex-direction: row;
+    // }
 
     input {
       background-color: $sea-green;
@@ -50,6 +55,8 @@
       padding: 1vh 2.257vw;
       min-width: 0;
       background-color: $yellow;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
   }
 }

@@ -10,6 +10,8 @@
   height: auto;
   margin: 0 auto;
   padding: 3.143vh 5.556vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
   form {
     display: flex;
@@ -20,37 +22,45 @@
     .avatars {
       display: flex;
       flex-direction: row;
+      justify-content: center;
+      justify-content: nospace-between;
     }
-
+    
     input {
       background-color: $sea-green;
       border-radius: 50px;
       border: solid black 0px;
       margin: 1.714vh auto;
       padding: 2.857vh 2vw;
-      min-width: 50.174vw;
+      min-width: 20px;
+      width: 600px;
     }
 
     input[type="radio"]:checked{
       opacity: 100;
+      max-width: 20px;
     }
 
     input[type="radio"] {
       opacity: 0;
+      max-width: 20px;
+
     }
 
     input[type="submit"] {
       padding: 1vh 2.257vw;
-      min-width: 0;
+      width: 300px;
       background-color: $yellow;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
     }
 
     .avatar {
-      width: 11.806vw;
-      // height: 19.429vh;
+      width: 200px;
+      height: 200px;
       border: solid black 0px;
       border-radius: 50%;
-      margin: 0;
+      margin: 0px;
     }
   }
 }

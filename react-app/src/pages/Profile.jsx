@@ -10,7 +10,7 @@ export default function Profile() {
       <Navbar />
       <div className="content">
         <div className="col1">
-          <img src={Avatar} />
+          <img className="prof" src={Avatar} />
           <div className="header">
             <p>AnimeLover99</p>
           </div>
