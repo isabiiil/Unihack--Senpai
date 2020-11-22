@@ -1,5 +1,25 @@
 @import "../main.scss";
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-radius: 10%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-left: 20px;
+}
+
 .swipe {
   background-color: $turquoise;
   margin: 4.286vh 4.948vw;
@@ -10,22 +30,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     .main {
-      width: 54.340vw;
-      height: 65.286vh;
-      margin: 0 auto;
+      position: relative;
+      margin: auto;
+      margin-bottom: 40px;
       background-color: $yellow;
       display: flex;
       justify-content: center;
       border: solid black 0px;
       border-radius: 38px;
-      padding: 10.429vh 2.257vw;
+      padding: 10.429vh 1.257vw;
+
+      img {
+        border-radius: 38px;
+        width: 575px;
+        height: 429.87px;
+        
+      }
 
       .icon {
         width: 5.035vw;
         height: 8.286vh;
         margin: auto 1.736vw;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
       }
     }
   }
