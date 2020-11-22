@@ -16,4 +16,79 @@
             height: 30vh;
         }
     }
-}
+
+    .row1 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px;
+
+        .info {
+            background-color: $sea-green;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .synopsis {
+            background-color: $sea-green;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+
+    .row1,.row2,.row3,.row4 {  
+        background-color: $sea-green;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px;
+        .episode-image {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 20px;
+                    margin: 20px;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
+                
+    
+        }
+
+        .episode-title {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 5px;
+        //I don't know how to space the episode titles properly...
+            p {
+                margin: 5px;
+            }
+        
+        }
+        .voice {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+        }
+        .past-review {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                text-align: left;
+            }
+        }
+       
+    }
+   
+} 
