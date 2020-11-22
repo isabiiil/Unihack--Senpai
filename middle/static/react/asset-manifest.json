@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.d2f36854.chunk.css",
+    "main.js": "/static/react/js/main.7be47ede.chunk.js",
+    "main.js.map": "/static/react/js/main.7be47ede.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.055585f9.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.055585f9.js.map",
+    "js/2.562b3348.chunk.js": "/static/react/js/2.562b3348.chunk.js",
+    "js/2.562b3348.chunk.js.map": "/static/react/js/2.562b3348.chunk.js.map",
+    "js/3.16b4e56c.chunk.js": "/static/react/js/3.16b4e56c.chunk.js",
+    "js/3.16b4e56c.chunk.js.map": "/static/react/js/3.16b4e56c.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/main.d2f36854.chunk.css.map": "/static/react/css/main.d2f36854.chunk.css.map",
+    "js/2.562b3348.chunk.js.LICENSE.txt": "/static/react/js/2.562b3348.chunk.js.LICENSE.txt",
+    "media/avatar2.1cd33727.png": "/static/react/media/avatar2.1cd33727.png",
+    "media/Swipe.scss": "/static/react/media/blobs.e7cddbb4.png",
+    "media/no.32cf07c0.png": "/static/react/media/no.32cf07c0.png",
+    "media/yes.0e7545d6.png": "/static/react/media/yes.0e7545d6.png"
+  },
+  "entrypoints": [
+    "js/runtime-main.055585f9.js",
+    "js/2.562b3348.chunk.js",
+    "css/main.d2f36854.chunk.css",
+    "js/main.7be47ede.chunk.js"
+  ]
+}

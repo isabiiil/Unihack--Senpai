@@ -45,6 +45,7 @@ export default function App() {
               <li>
                 <Link to="/swipe">Swipe</Link>
               </li>
+              <p>My Session = {window.token}</p>
             </ul>
           </nav>
 
