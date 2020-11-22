@@ -24,7 +24,6 @@ export default function Login() {
         <input type="password" placeholder="password"></input>
         <input type="submit" className="submit" value="Log In"></input>
       </form>
-      <p>Have an account? Log in here.</p>
     </div>
   );
 }

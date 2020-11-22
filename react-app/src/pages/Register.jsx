@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Avatar1 from "./../images/avatar2.png"
@@ -25,7 +26,7 @@ export default function Register() {
         <input type="password" placeholder="password"></input>
         <input type="submit" className="submit" value="Create Account"></input>
       </form>
-      <p>Have an account? Log in here.</p>
+      <p>Have an account? <Link to="/login">Log in here.</Link></p>
     </div>
   );
 }

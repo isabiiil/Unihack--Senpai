@@ -12,6 +12,10 @@
   padding: 3.143vh 5.556vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+  a:link, a:focus, a:visited {
+    color: black;
+    text-decoration: none;
+  }
 
   form {
     display: flex;
@@ -34,6 +38,10 @@
       padding: 2.857vh 2vw;
       min-width: 20px;
       width: 600px;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     input[type="radio"]:checked{
