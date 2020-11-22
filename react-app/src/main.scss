@@ -9,6 +9,8 @@ $yellow: #EBFFAF;
 body {
   width: 100vw;
   height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   background-color: $yellow;
   background-image: url("./images/blobs.png");
   background-position: center;

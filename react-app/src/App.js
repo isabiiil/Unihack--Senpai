@@ -13,7 +13,9 @@ import {
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
-import Profile from "./pages/Profile"
+import Profile from "./pages/Profile";
+import Search from "./pages/Search";
+import Swipe from "./pages/Swipe";
 import './App.css';
 
 // library.add(fas, faUserCircle, faEnvelope, faUnlockAlt);
@@ -37,6 +39,12 @@ export default function App() {
               <li>
                 <Link to="/profile">Profile</Link>
               </li>
+              <li>
+                <Link to="/search">Search</Link>
+              </li>
+              <li>
+                <Link to="/swipe">Swipe</Link>
+              </li>
             </ul>
           </nav>
 
@@ -51,6 +59,12 @@ export default function App() {
             </Route>
             <Route path="/profile">
               <Profile />
+            </Route>
+            <Route path="/search">
+              <Search />
+            </Route>
+            <Route path="/swipe">
+              <Swipe />
             </Route>
             <Route path="/">
               <Register />

@@ -1,0 +1,32 @@
+@import "../main.scss";
+
+.swipe {
+  background-color: $turquoise;
+  margin: 4.286vh 4.948vw;
+  border: solid black 0px;
+  border-radius: 38px;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .main {
+      width: 54.340vw;
+      height: 65.286vh;
+      margin: 0 auto;
+      background-color: $yellow;
+      display: flex;
+      justify-content: center;
+      border: solid black 0px;
+      border-radius: 38px;
+      padding: 10.429vh 2.257vw;
+
+      .icon {
+        width: 5.035vw;
+        height: 8.286vh;
+        margin: auto 1.736vw;
+      }
+    }
+  }
+}
