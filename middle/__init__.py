@@ -1,5 +1,8 @@
 from flask import *
 import requests
+import json
+import uuid
+import time
 
 app = Flask(__name__)
 app.secret_key = "debug"
@@ -24,6 +27,41 @@ def gimmetoken():
     # print (rj['authToken'])
 
     return rj['authToken']
+
+
+def registeruser(username, pw, imgurl):
+	
+    utoken = str(uuid.uuid4())
+    time.sleep(1)
+    utoken2 = str(uuid.uuid4())
+
+    url = "https://aca4e01c-1465-4012-8e84-f282757e54f9-us-east1.apps.astra.datastax.com/api/rest/v1/keyspaces/data/tables/users/rows"
+
+    atoken = gimmetoken()
+
+    payload = {}
+    pc = []
+    pc.append({"name":"id","value":utoken})
+    pc.append({"name":"name","value":username})
+    pc.append({"name":"password","value":pw})
+    pc.append({"name":"avatar","value":imgurl})
+
+    payload ['columns'] = pc
+
+    jpayload = json.dumps(payload)
+
+    # payload = "{\"columns\":[,,,]}"
+    headers = {
+        'accept': "application/json",
+        'content-type': "application/json",
+        'x-cassandra-request-id': utoken2,
+        'x-cassandra-token': atoken,
+        'cache-control': "no-cache"
+        }
+
+    response = requests.request("POST", url, data=jpayload, headers=headers)
+
+    return response.text
 
 
 
