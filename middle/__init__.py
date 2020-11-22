@@ -85,10 +85,25 @@ def register():
 	else:
 		return render_template("register.html")
 
-@app.route("/auth", methods=["POST"])
-def auth():
+@app.route("/authRegister", methods=["POST"])
+def authRegister():
+    request_json = request.get_json()
+    if request_json:
+        username = request_json['user']
+        pw =  request_json['password']
+        imgurl = request_json['avatar']
 
-	return request.json
+        resp =  registeruser(username, pw, imgurl, utoken, utoken2)
+        retjson = {}
+
+        ##change required header
+
+        retjson['status'] = resp
+    
+        return json.dumps(retjson)
+
+    else:
+	return {"status":"invalid request"}
 
 if __name__ == "__main__":
 	app.run()
