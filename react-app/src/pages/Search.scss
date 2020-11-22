@@ -1,0 +1,44 @@
+@import "../main.scss";
+
+.search {
+    background-color: $turquoise;
+    margin: 4.286vh 4.948vw;
+    border: solid black 0px;
+    border-radius: 38px;
+  
+    .search-bar {
+        background-color: $sea-green;
+        text-align: left;
+        border-radius: 50px;
+        justify-content: center;
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        p {
+            font-size: 150%;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        .icon {
+            font-size: 38px;
+            position: relative;
+            margin-left: 1000px;
+          }
+        
+
+    }
+    .text {
+        position: relative;
+        text-align: left;
+        background-color: $sea-green;
+        border-radius: 38px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        p {
+            margin: 20px;
+        }
+
+    }
+    
+}
