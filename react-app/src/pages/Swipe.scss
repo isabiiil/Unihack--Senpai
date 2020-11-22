@@ -10,11 +10,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    
     .main {
-      width: 54.340vw;
-      height: 65.286vh;
-      margin: 0 auto;
+      // width: 54.340vw;
+      // height: 65.286vh;
+      position: relative;
+      margin-bottom: 50px;
+      margin-left: 300px;
+      margin-right: 300px;
       background-color: $yellow;
       display: flex;
       justify-content: center;
@@ -22,10 +25,16 @@
       border-radius: 38px;
       padding: 10.429vh 2.257vw;
 
+      img {
+        border-radius: 38px;
+      }
+      
       .icon {
         width: 5.035vw;
         height: 8.286vh;
         margin: auto 1.736vw;
+        border-radius: 50%;
+
       }
     }
   }

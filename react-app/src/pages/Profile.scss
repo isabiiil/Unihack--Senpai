@@ -1,5 +1,56 @@
 @import "../main.scss";
 
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-radius: 10%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-left: 20px;
+}
+
+.navbar {
+  background-color: $sea-green;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  border-radius: 20px;
+
+  h3 {
+    margin-left: 20px;
+  }
+  .right {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40%;
+
+    p {
+      margin-left: 10px;
+    }
+
+    .searchbar {
+      position: relative;
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+  }
+}
+
+
 .profile {
   background-color: $turquoise;
   border-radius: 38px;
